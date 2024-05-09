@@ -1,0 +1,53 @@
+---
+id: https://w3id.org/orbital-transfer/model
+name: orbital-transfer-model
+title: orbital-transfer-model
+description: |-
+  Orbital Transfer model
+license: MIT
+
+prefixes:
+  _base: https://w3id.org/orbital-transfer
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  sh: https://w3id.org/shacl/
+  dcterms: http://purl.org/dc/terms/
+  prov: http://www.w3.org/ns/prov#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  owl: http://www.w3.org/2002/07/owl#
+
+
+default_prefix: orbital
+default_range: string
+
+imports:
+  - linkml:types
+
+emit_prefixes:
+  - linkml
+  - rdf
+  - rdfs
+  - xsd
+  - owl
+
+# ==================================
+# Classes                          #
+# ==================================
+classes: ~
+
+# ==================================
+# Slots                            #
+# ==================================
+slots:
+  id:
+    identifier: true
+    description: the unique name of th dataset
+    slot_uri: dcterms:identifier
+    exact_mappings:
+      - schema:name
+
+# ==================================
+# Enumerations                     #
+# ==================================
+enums: ~
